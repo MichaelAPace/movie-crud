@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit.html</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <div class="editform">
+  <form action="/movies/{{_id}}/update" class="editform" method="post">
+    <label for="title">Title
+    <input type="text" name="title" id="title" value="{{title}}"/></label>
+    <label for="director">Director
+    <input type="text" name="director" id="director" value="{{director}}"/></label>
+    <label for="year">Year
+    <input type="text" name="year" id="year" value="{{year}}"/></label>
+    <label for="rating">Rating
+    <input type="text" name="rating" id="rating" value="{{rating}}"/></label>
+    <label for="posterUrl">Poster URL
+    <input type="text" name="posterUrl" id="posterUrl" value="{{posterUrl}}"/></label>
+    <input type="submit" value="Edit This Movie"/>
+  </form>
+</div>
+  <a href="/movies">All Movies</a>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies Edit</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<header>
+  <div class="headertext">
+    <a href="/movies" class="headlink"><p>Mike's Movie Reviews</p></a>
+  </div>
+</header>
+<body>
+  <div class="pagediv">
+    <h1>Edit a Movie</h1>
+    <ul>
+      <form action="/movies/{{_id}}/edit" class="editform" method="post">
+        <li><label for="title">Title
+          <input type="text" name="title" id="title" value="{{title}}"/></label></li>
+          <li><label for="director">Director
+            <input type="text" name="director" id="director" value="{{director}}"/></label></li>
+            <li><label for="year">Year
+              <input type="text" name="year" id="year" value="{{year}}"/></label></li>
+              <li><label for="rating">Rating
+                <input type="text" name="rating" id="rating" value="{{rating}}"/></label></li>
+                <li><label for="posterUrl">Poster URL
+                  <input type="text" name="posterUrl" id="posterUrl"/ value="{{posterUrl}}"></label></li>
+                  <input type="submit" value="Edit This Movie"/>
+                </form>
+              </ul>
+            </div>
+            <a href="/movies">All Movies</a>
+          </div>
+        </body>
+        </html>

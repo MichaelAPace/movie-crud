@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies New</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<header>
+  <div class="headertext">
+    <a href="/movies" class="headlink"><p>Mike's Movie Reviews</p></a>
+  </div>
+</header>
+<body>
+  <div class="pagediv">
+  <h1>Add a Movie</h1>
+  <div class="newform">
+    <ul>
+      <form action="/movies" method="post" class="input">
+        <li><label for="title">Title
+          <input type="text" name="title" id="title"/></label></li>
+          <li><label for="director">Director
+            <input type="text" name="director" id="director"/></label></li>
+            <li><label for="year">Year
+              <input type="text" name="year" id="year"/></label></li>
+              <li><label for="rating">Rating
+                <input type="text" name="rating" id="rating"/></label></li>
+                <li><label for="posterUrl">Poster URL
+                  <input type="text" name="posterUrl" id="posterUrl"/></label></li>
+                  <input type="submit" value="Add New Movie"/>
+                </form>
+              </ul>
+            </div>
+            <a href="/movies/">
+              <button>All Movies</button>
+          </a>
+          </div>
+          </body>
+          </html>

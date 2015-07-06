@@ -1,0 +1,56 @@
+header {
+  background: black;
+  height: 200px;
+  width: 95%;
+  display: block;
+}
+.headertext{
+  padding: 10px 50px;
+  color: white;
+  font-size:50px;
+}
+.headlink {
+  color: white;
+  text-decoration: none;
+}
+
+ body {
+  background: grey;
+}
+
+ul {
+  list-style: none;
+}
+
+.newform {
+  font-size: 40px;
+}
+
+input[type="text"] {
+  display: inline;
+  width: 30%;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.pagediv{
+  padding-left: 50px;
+}
+
+table, th, td {
+  padding-left: 40px;
+  padding-top:20px;
+  font-size:30px;
+}
+td {
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+.editform{
+  font-size: 40px;
+}
+
+.button{
+  padding-left: 50px;
+  padding-top:50px;
+}

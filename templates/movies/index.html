@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies Index</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<header>
+  <div class="headertext">
+    <a href="/movies" class="headlink"><p>Mike's Movie Reviews</p></a>
+  </div>
+</header>
+<body>
+  <div>
+  <!--   <center>
+    {{#movies}}
+    <h2>Title:</h2><h2><a href="/movies/{{_id}}"><h2>{{title}}</h2></a>
+    <h2>Director:</h2> <h2>{{director}}</h2>
+    <h2>Year:</h2> <h2>{{year}}</h2>
+    <h2>Rating:</h2> <h2>{{rating}}</h2>
+    <button><a href="/movies/{{_id}}/edit">Edit {{title}}</a></button>
+    <form action="/movies/{{_id}}/delete" method ="post">
+      <input type="submit" value="delete" class="delete"/>
+    </form>
+    {{/movies}} -->
+
+    <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Year</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        {{#movies}}
+            <tr>
+            <td><a href='/movies/{{_id}}/show'>{{title}}</a></td>
+            <td>{{director}}</td>
+            <td>{{year}}</td>
+            <td>{{rating}}</td>
+            <td><form class="" action="/movies/{{_id}}/edit" method="GET">
+                  <input type="submit" name="edit" value="Edit"></input>
+                </form></td>
+            <td><form class="" action="/movies/{{_id}}/delete" method="POST">
+                  <input type="submit" name="delete" value="Delete"></input>
+                </form></td>
+            </tr>
+          {{/movies}}
+    </table>
+  </div>
+  <div class=button>
+  
+  <a href="/movies/new">
+    <button>Add a Movie!</button>
+</a>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "movie-crud",
+  "version": "1.0.0",
+  "description": "### Make your own movie rating site. - Fork and Clone this repository and use everything you've learned in last couple weeks to complete the exercise.  Use MongoDB for your database.",
+  "main": "app.js",
+  "dependencies": {
+    "qs": "^4.0.0",
+    "monk": "^1.0.1",
+    "mime": "^1.3.4",
+    "mustache": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --harmony app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gSchool/movie-crud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gSchool/movie-crud/issues"
+  },
+  "homepage": "https://github.com/gSchool/movie-crud"
+}
